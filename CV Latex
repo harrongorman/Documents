@@ -1,0 +1,90 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{textcomp}
+\usepackage{fontspec} % XeLaTeX-compatible font package
+
+% Set link color
+\hypersetup{colorlinks=true, linkcolor = Plum, urlcolor = Plum}
+
+
+
+% Main font: TeX Gyre Pagella
+\setmainfont{TeX Gyre Pagella}
+
+% Define small caps version (same font family with feature enabled)
+\newfontfamily\tnrsc[
+  Letters=SmallCaps
+]{TeX Gyre Pagella}
+
+% Remove header
+\pagestyle{empty}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\tnrsc}{}{0em}{}[\titlerule]
+\titleformat{\subsection}[runin]{\bfseries}{}{0em}{}[.]
+
+% Updated Header
+\fancyhf{}
+\fancyhead[R]{Last Updated: \\ \today}
+\renewcommand\headrulewidth{0pt}
+\pagestyle{fancy}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{John Harron Gorman}} \\[0.25em]
+  \href{mailto:john.gorman@colorado.edu}{\texttt{john.gorman@colorado.edu}} \textopenbullet $\:$
+  \href{https://johnharrongorman.com}{\texttt{johnharrongorman.com}} \textopenbullet $\:$
+  \href{tel:+3019745275}{(301) 974-5275}
+\end{center}
+
+\vspace{0.25em}
+
+\section*{Fields}
+\noindent
+\begin{tabular}{@{}ll}
+{\tnrsc Primary} & Urban Economics, Real Estate Economics
+\end{tabular}
+
+\section*{Education}
+\textbf{University of Colorado, Boulder} \hfill \textit{August 2024 -- Present} \\
+Ph.D. in Economics \
+
+\textbf{Washington University in St. Louis} \hfill \textit{August 2017 -- May 2021} \\
+B.A. in Economics \\
+Double Major in Political Science \\
+Minor in Mathematics
+
+\section*{Previous Positions}
+Research Assistant, Congressional Research Service \hfill \textit{October 2021 -- June 2024} \\
+Intern, St. Louis Mayor's Office \hfill \textit{July 2021 -- September 2021}
+
+\section*{Pre-Doctoral Publications}
+\begin{itemize}[leftmargin=*, itemsep=0.25em]
+  \item \href{https://crsreports.congress.gov/product/pdf/R/R48091}{"Contributions to Defined Contribution Plans"}, \textit{Congressional Research Service}, May 11, 2024.
+  \item \href{https://crsreports.congress.gov/product/pdf/R/R47895}{"Prevention and Public Health Fund: In Brief"}, \textit{Congressional Research Service}, January 8, 2024.
+  \item \href{https://crsreports.congress.gov/product/pdf/R/R47699}{"U.S. Retirement Assets: Data in Brief"}, \textit{Congressional Research Service}, September 20, 2023.
+\end{itemize}
+
+\section*{Teaching Experience}
+\textit{University of Colorado, Boulder} \\
+Teaching Assistant, Introduction to Microeconomics \hfill \textit{Autumn 2024, Spring 2025} 
+
+\textit{Washington University in St. Louis} \\
+Teaching Assistant, Introduction to Microeconomics \hfill \textit{Spring \& Autumn 2019}
+
+\section*{Honors and Awards}
+Roger M. Smith Memorial Scholarship Award \hfill \textit{May 2017}
+
+\section*{Skills and Personal Interests}
+\textbf{Programming Languages:} R (fluent), Python (intermediate), SAS (intermediate) \\
+\textbf{Software:} Final Cut Pro, \LaTeX{} \\
+\textbf{Interests:} Running (Completed 10 Marathons), Electoral Systems
+
+\end{document}
